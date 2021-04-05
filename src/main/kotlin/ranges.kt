@@ -24,4 +24,8 @@ println("-------------------------------------------------------")
     }else{
         println("Não está dentro do intervalo")
     }
+
+    val alfabeto = "a".."z"
+    val letra = "k"
+    println(letra in alfabeto)
 }
