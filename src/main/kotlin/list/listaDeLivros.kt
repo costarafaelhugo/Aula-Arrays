@@ -51,11 +51,12 @@ fun main() {
 
     val ordenadoPorAutor = livros.sortedBy{it.autor}
     ordenadoPorTitulo.imprimeComMarcadores()
+
+//    val titulos: List<String> = listaDeLivros
+//        .filter { it.autor.startsWith("João") }
+//        .sortedBy { it.anoPublicacao }
+//        .map { it.titulo }
+
+//    println(titulos)
 }
 
-fun List<Livro>.imprimeComMarcadores() {
-    val textoFormatado = this.joinToString(separator = "\n") {
-        " - ${it.titulo} de ${it.autor} "
-    }
-    println("### Lista de Livros ### \n$textoFormatado ")
-}
